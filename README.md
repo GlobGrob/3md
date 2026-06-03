@@ -2,7 +2,6 @@
 
 # Проверка прав root
 if [ "$EUID" -ne 0 ]; then
-  echo "Пожалуйста, запустите скрипт от имени root (sudo)"
   exit 1
 fi
 
